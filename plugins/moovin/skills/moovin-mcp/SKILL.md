@@ -13,6 +13,10 @@ identifique `list_accounts`, `get_context`, `list_services`, `search_operations`
 `get_operation`, `call_read` e `call_write` pelos seus nomes. `call_write` só está
 disponível quando o servidor permite alterações.
 
+Para personalizar temas, layouts, seções, menus e aparência de lojas virtuais, use
+também [moovin-storefront](../moovin-storefront/SKILL.md), que acrescenta as regras
+do editor e o link de preview somente na resposta final.
+
 ## Escolher a conta
 
 1. Consulte `list_accounts` no início do trabalho para saber quais contas o usuário pode

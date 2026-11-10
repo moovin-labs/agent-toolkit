@@ -18,8 +18,11 @@ agent-toolkit/
         ├── .mcp.json
         ├── README.md
         └── skills/
-            └── moovin-mcp/
-                └── SKILL.md
+            ├── moovin-mcp/
+            │   └── SKILL.md
+            └── moovin-storefront/
+                ├── SKILL.md
+                └── references/
 ```
 
 Os dois marketplaces têm o identificador `moovin-labs` e apontam para `./plugins/moovin`,
@@ -59,7 +62,13 @@ português e uma descrição clara de quando usá-la. Guarde referências e outr
 dentro da pasta da skill quando forem necessários ao seu funcionamento.
 
 As skills orientam o uso dos serviços. Operações, parâmetros e schemas são descobertos
-pelo catálogo do MCP.
+pelo catálogo do MCP. Ao atualizar `moovin-storefront`, confira os contratos disponíveis
+e as regras de substituição de listas, publicação e construção do preview.
+
+Este repositório e os pacotes distribuídos são públicos. Inclua somente instruções
+necessárias ao uso do plugin. Relatórios de análise interna, hashes e caminhos de
+repositórios privados, endpoints não expostos pelo MCP, detalhes de infraestrutura e
+planos de integração de serviços devem permanecer fora do conteúdo versionado.
 
 ## Versões e configuração
 

@@ -30,10 +30,16 @@ Experimente pedir:
 - “Liste minhas contas disponíveis na Moovin.”
 - “O que posso consultar sobre meus atendimentos?”
 - “Mostre as conversas abertas da Loja Exemplo.”
+- “Ajuste o cabeçalho e o rodapé do tema da Loja Exemplo e mostre o preview.”
 
 Substitua “Loja Exemplo” pelo nome de uma das suas contas. A skill
 [`moovin-mcp`](skills/moovin-mcp/SKILL.md) orienta o assistente a escolher as ferramentas,
 consultar os parâmetros e conferir o resultado de cada pedido.
+
+Para temas, layouts, seções, banners, vitrines, menus, cores e fontes, a skill
+[`moovin-storefront`](skills/moovin-storefront/SKILL.md) orienta a personalização da
+loja e devolve o link de preview somente na resposta final. Publicação e ativação
+do tema são etapas próprias; configurações compartilhadas do site podem afetar a loja diretamente.
 
 ## Configuração da conexão
 

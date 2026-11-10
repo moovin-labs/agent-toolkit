@@ -92,13 +92,18 @@ Você também pode experimentar:
 - “O que posso consultar sobre meus atendimentos?”
 - “Encontre o contato pelo e-mail que vou informar.”
 - “Quais serviços da Moovin estão disponíveis?”
+- “Na Loja Exemplo, ajuste as cores do tema e mostre o preview no final.”
 
 ## O que está incluído
 
 O [plugin Moovin](plugins/moovin/README.md) reúne a conexão com os serviços da plataforma
-e a skill [moovin-mcp](plugins/moovin/skills/moovin-mcp/SKILL.md), que orienta o
-assistente a identificar suas contas, encontrar as ações disponíveis e conferir os
-resultados dos seus pedidos.
+e as skills:
+
+- [moovin-mcp](plugins/moovin/skills/moovin-mcp/SKILL.md): identifica suas contas,
+  encontra as ações disponíveis e confere os resultados dos pedidos.
+- [moovin-storefront](plugins/moovin/skills/moovin-storefront/SKILL.md): gerencia temas,
+  layouts, seções, menus e a aparência da loja, com um link de preview na resposta final.
+  Distingue alterações no rascunho, publicação e configurações compartilhadas do site.
 
 As ações disponíveis dependem dos serviços conectados e das suas permissões. Algumas
 conexões permitem apenas consultas; para alterar dados, a integração também precisa estar
