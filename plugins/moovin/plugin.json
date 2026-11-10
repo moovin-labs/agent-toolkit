@@ -17,7 +17,9 @@
         "shortDescription": "Moovin no seu assistente",
         "longDescription": "Consulte dados dos serviços da Moovin e peça as atualizações de que precisa durante a conversa. Você escolhe a conta em que o assistente deve trabalhar.",
         "developerName": "Moovin",
-        "category": "Productivity"
+        "category": "Productivity",
+        "logo": "./assets/moovin.png",
+        "composerIcon": "./assets/moovin.png"
       }
     }
   }
