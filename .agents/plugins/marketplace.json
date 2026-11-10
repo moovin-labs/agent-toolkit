@@ -1,0 +1,20 @@
+{
+  "name": "moovin-labs",
+  "interface": {
+    "displayName": "Moovin"
+  },
+  "plugins": [
+    {
+      "name": "moovin",
+      "source": {
+        "source": "local",
+        "path": "./plugins/moovin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

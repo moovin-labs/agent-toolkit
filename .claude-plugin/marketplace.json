@@ -1,0 +1,14 @@
+{
+  "name": "moovin-labs",
+  "owner": {
+    "name": "Moovin"
+  },
+  "description": "Skills e plugins para usar a Moovin com assistentes de IA.",
+  "plugins": [
+    {
+      "name": "moovin",
+      "source": "./plugins/moovin",
+      "description": "Use seu assistente de IA para consultar e atualizar informações na Moovin."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "moovin",
+  "version": "0.1.0",
+  "description": "Use seu assistente de IA para consultar e atualizar informações na Moovin.",
+  "author": {
+    "name": "Moovin",
+    "url": "https://github.com/moovin-labs"
+  },
+  "homepage": "https://github.com/moovin-labs/agent-toolkit",
+  "repository": "https://github.com/moovin-labs/agent-toolkit",
+  "keywords": ["moovin", "mcp", "atendimento", "integracoes"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Moovin",
+        "shortDescription": "Moovin no seu assistente",
+        "longDescription": "Consulte dados dos serviços da Moovin e peça as atualizações de que precisa durante a conversa. Você escolhe a conta em que o assistente deve trabalhar.",
+        "developerName": "Moovin",
+        "category": "Productivity"
+      }
+    }
+  }
+}

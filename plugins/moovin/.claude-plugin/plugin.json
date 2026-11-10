@@ -1,0 +1,12 @@
+{
+  "name": "moovin",
+  "version": "0.1.0",
+  "description": "Use seu assistente de IA para consultar e atualizar informações na Moovin.",
+  "author": {
+    "name": "Moovin",
+    "url": "https://github.com/moovin-labs"
+  },
+  "homepage": "https://github.com/moovin-labs/agent-toolkit",
+  "repository": "https://github.com/moovin-labs/agent-toolkit",
+  "keywords": ["moovin", "mcp", "atendimento", "integracoes"]
+}
