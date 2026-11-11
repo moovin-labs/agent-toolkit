@@ -107,6 +107,39 @@ Não aplique a regra de adicionar/remover livremente da home a esse grupo. Para
 landing pages de produto/listagem, preserve as seções estruturais retornadas
 (`PRODUCT`/`PRODUCT_LIST`) e siga as instruções do template.
 
+### Seção HTML personalizada
+
+Use a seção `HTML` para implementar personalizações que não tenham uma opção
+pronta nas configurações do template, como faixas promocionais, grades de
+benefícios, blocos editoriais, tabelas e perguntas frequentes. Ela permite
+complementar os componentes nativos com código personalizado, salvo pelo MCP
+no `configs` da própria seção. Não depende de uma operação de itens separada.
+
+1. Consulte `getTemplateSettings` e confirme que `HTML` está disponível para a
+   página e o grupo desejados. Localize o parâmetro de código nas instruções do
+   tipo; ele pode ser um `TEXTAREA` com `typeConfigs.type = "html"`. Use seu `id`
+   como chave em `configs`, sem presumir que se chama `html` em todo template.
+2. Leia a lista completa de seções. Edite a seção HTML escolhida ou acrescente
+   `{ type: "HTML", active: true, configs }`, sem inventar um ID. Guarde o código
+   como string no parâmetro identificado, preservando as outras configurações
+   e os defaults aplicáveis. Insira o bloco na posição correspondente ao pedido.
+3. Escreva um fragmento HTML para a seção, sem substituir o documento da página.
+   Para estilos personalizados, limite os seletores a uma classe ou ID próprio
+   do bloco e confira o suporte a CSS no preview. Se forem necessárias interações
+   com JavaScript, confirme que o template permite sua execução; um campo HTML
+   e uma gravação aceita, por si só, não comprovam esse suporte. Mantenha o bloco
+   acessível e adaptável a desktop e mobile.
+4. Salve a lista preservada com `saveEditorSectionsGroup` no mecanismo clássico
+   ou `saveEditorSections` no atual, conforme o contrato. Releia o recurso e
+   confira o bloco no preview, incluindo estilos, links, interações solicitadas
+   e preservação das demais seções. Inclua o link somente na resposta final;
+   publicação continua sendo uma ação separada.
+
+HTML personaliza a apresentação e as interações suportadas no navegador. Quando
+o pedido depender de dados ou operações de negócio, use as operações disponíveis
+no MCP; o bloco não concede acesso a APIs indisponíveis nem substitui dados reais.
+Se o destino não oferecer o tipo HTML, explique essa limitação específica.
+
 ### Rodapé em blocos
 
 Confira a tecnologia/versão do rodapé antes de escolher o fluxo. No rodapé por
@@ -114,6 +147,9 @@ blocos, leia `ALL/FOOTER`, crie ou selecione `BLOCK` e use
 `getEditorBlockColumns`/`saveEditorBlockColumns` no serviço aplicável.
 Os tipos de coluna e seus parâmetros vêm de
 `footer_sections[].typeConfigs.columns`; uma coluna tem `type` e `configs`.
+Se o template oferecer uma coluna `HTML`, use-a para conteúdo personalizado no
+rodapé e grave o código no parâmetro indicado para essa coluna, mantendo a seção
+`BLOCK` e as demais colunas.
 Leia e preserve todas as colunas ao gravar. No contrato atual, ambos os campos
 são obrigatórios. Copyright usa seu grupo de parâmetros, não uma coluna
 inventada. O editor oferece até quatro blocos e seis colunas por bloco;

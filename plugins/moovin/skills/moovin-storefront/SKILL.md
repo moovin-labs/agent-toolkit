@@ -2,10 +2,11 @@
 name: moovin-storefront
 description: >-
   Gerencia a aparência e a configuração da loja virtual Moovin: temas, templates,
-  layouts, seções, banners, vitrines, menus, cores, fontes, rodapé, landing pages e
-  aparência do checkout. Use para personalizar, pré-visualizar, publicar ou ativar
-  temas pelo MCP, devolvendo o link de preview somente na resposta final. Não se
-  destina à gestão de pedidos, estoque ou preços de produtos.
+  layouts, seções, HTML personalizado, banners, vitrines, menus, cores, fontes,
+  rodapé, landing pages e aparência do checkout. Use para personalizar,
+  pré-visualizar, publicar ou ativar temas pelo MCP, devolvendo o link de preview
+  somente na resposta final. Não se destina à gestão de pedidos, estoque ou
+  preços de produtos.
 ---
 
 # Gerenciar a vitrine da Moovin
@@ -43,6 +44,7 @@ Leia somente as referências necessárias ao pedido:
 | --- | --- |
 | Biblioteca de temas, copiar, renomear, ativar, publicar, migrar; logo, domínio e dados da loja | [Temas e site](references/temas-e-site.md) |
 | Cores, fontes, configurações dinâmicas, checkout, criar/reordenar/ocultar seções e montar rodapé | [Configurações e seções](references/configuracoes-e-secoes.md) |
+| Personalizações que as opções nativas do template não atendem | [Seção HTML personalizada](references/configuracoes-e-secoes.md#seção-html-personalizada) |
 | Banners, produtos de vitrine, vídeos, stories, menus, arquivos e landing pages | [Menus e conteúdo](references/menus-e-conteudo.md) |
 | Link de preview na resposta final | [Preview](references/preview.md) |
 
@@ -58,6 +60,12 @@ Leia somente as referências necessárias ao pedido:
 - Leia os dados atuais e as instruções de configuração do template antes de
   montar o payload. Cores, menus e fontes usam identificadores definidos pelo
   template; não invente chaves a partir de seus rótulos na interface.
+- Quando as configurações nativas não atenderem ao pedido, use a seção `HTML`
+  para implementar conteúdo, composição visual e interações compatíveis com a
+  loja, desde que o template ofereça esse tipo no destino escolhido. Considere
+  essa alternativa antes de concluir que a personalização não é possível. O
+  código é salvo nas configurações da seção pelas operações de seções do MCP;
+  siga o fluxo de [HTML personalizado](references/configuracoes-e-secoes.md#seção-html-personalizada).
 - Listas de seções, conteúdos e árvores de menu são substituições completas.
   Preserve o conteúdo fora do pedido e sua ordem. Para mapas gravados com PUT,
   preserve as chaves não alteradas. Envie apenas campos de escrita aceitos, sem

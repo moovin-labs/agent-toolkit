@@ -20,8 +20,10 @@ preservando itens e ordem fora do pedido.
 
 Tipos disponíveis dependem do template; a existência da operação não habilita o
 recurso no clássico. `SHOWCASE_BANNER` pode precisar das listas de banner e de
-vitrine da mesma seção. HTML e Texto + Imagem podem ser definidos pelo `configs`
-dinâmico do tipo, sem uma API de itens própria.
+vitrine da mesma seção. Para conteúdo personalizado além das opções nativas,
+use o fluxo de [seção HTML](configuracoes-e-secoes.md#seção-html-personalizada),
+gravado no `configs` da própria seção. Texto + Imagem também pode usar o
+`configs` dinâmico do tipo, sem uma API de itens própria.
 
 - **Banners:** preserve `resource.desktop` e `resource.mobile`, link, textos e
   agendamento. No clássico, `resource.desktop` é obrigatório, mesmo que nulo/vazio.
