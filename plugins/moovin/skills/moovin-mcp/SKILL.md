@@ -13,6 +13,12 @@ identifique `list_accounts`, `get_context`, `list_services`, `search_operations`
 `get_operation`, `call_read` e `call_write` pelos seus nomes. `call_write` só está
 disponível quando o servidor permite alterações.
 
+Para consultar pedidos de venda, inclusive itens, histórico, pagamentos e entregas,
+use [moovin-orders](../moovin-orders/SKILL.md). Esse fluxo é somente de leitura.
+
+Para gerenciar o cadastro de produtos e variações, preços por SKU ou tabela e
+estoque por centro de distribuição, use [mcp-products](../mcp-products/SKILL.md).
+
 Para personalizar temas, layouts, seções, menus e aparência de lojas virtuais, use
 também [moovin-storefront](../moovin-storefront/SKILL.md), que acrescenta as regras
 do editor e o link de preview somente na resposta final.

@@ -18,7 +18,11 @@ agent-toolkit/
         ├── .mcp.json
         ├── README.md
         └── skills/
+            ├── mcp-products/
+            │   └── SKILL.md
             ├── moovin-mcp/
+            │   └── SKILL.md
+            ├── moovin-orders/
             │   └── SKILL.md
             └── moovin-storefront/
                 ├── SKILL.md
