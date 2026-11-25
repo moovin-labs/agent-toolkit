@@ -20,6 +20,9 @@ agent-toolkit/
         └── skills/
             ├── mcp-products/
             │   └── SKILL.md
+            ├── moovin-hub/
+            │   ├── SKILL.md
+            │   └── references/
             ├── moovin-mcp/
             │   └── SKILL.md
             ├── moovin-orders/

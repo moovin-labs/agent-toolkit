@@ -105,6 +105,8 @@ e as skills:
   venda, histórico, pagamentos, entregas e totais em modo somente leitura.
 - [mcp-products](plugins/moovin/skills/mcp-products/SKILL.md) gerencia produtos e
   variações, preços por SKU ou tabela e estoque por centro de distribuição.
+- [moovin-hub](plugins/moovin/skills/moovin-hub/SKILL.md) gerencia canais e anúncios
+  de marketplace e acompanha a sincronização de preços, estoque e pedidos.
 - [moovin-storefront](plugins/moovin/skills/moovin-storefront/SKILL.md): gerencia temas,
   layouts, seções, menus e a aparência da loja, com um link de preview na resposta final.
   Distingue alterações no rascunho, publicação e configurações compartilhadas do site.

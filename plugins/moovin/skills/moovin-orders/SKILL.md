@@ -32,9 +32,8 @@ atenda à parte de consulta sem executar nem delegar a alteração.
 | Pedidos por cliente, período, situação ou canal | Use `listOrders` com os filtros solicitados. Diferencie a data de criação da data de atualização. Para uma contagem com esses filtros, use `countOrders`. |
 | Faturamento ou resumo de vendas | Use `getOrderReport` quando o período solicitado estiver entre os aceitos. Para unidades vendidas de um produto, `getProductSales` considera pedidos aprovados e exclui o canal `IMPORT`. |
 
-Se a pergunta for sobre **sincronização com um marketplace**, pesquise as leituras
-em `moovin-hub`. Use `getOrderPaginatedList` para localizar o pedido pelo código do
-canal e `getOrderById` com o ID retornado pelo Hub.
+Se a pergunta for sobre **sincronização com um marketplace**, siga as consultas
+de pedidos da skill [moovin-hub](../moovin-hub/SKILL.md), usando apenas `call_read`.
 
 Na resposta, identifique a conta e o pedido ou os filtros usados. Ao listar todos
 os pedidos, percorra a paginação. Se o resultado for parcial, indique a cobertura.

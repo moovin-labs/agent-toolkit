@@ -19,6 +19,9 @@ use [moovin-orders](../moovin-orders/SKILL.md). Esse fluxo é somente de leitura
 Para gerenciar o cadastro de produtos e variações, preços por SKU ou tabela e
 estoque por centro de distribuição, use [mcp-products](../mcp-products/SKILL.md).
 
+Para operar canais e anúncios de marketplace ou investigar a sincronização de
+um pedido com o canal, use [moovin-hub](../moovin-hub/SKILL.md).
+
 Para personalizar temas, layouts, seções, menus e aparência de lojas virtuais, use
 também [moovin-storefront](../moovin-storefront/SKILL.md), que acrescenta as regras
 do editor e o link de preview somente na resposta final.

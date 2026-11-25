@@ -32,6 +32,7 @@ Experimente pedir:
 - “Mostre as conversas abertas da Loja Exemplo.”
 - “Na Loja Exemplo, qual é o status do pedido de número 12345?”
 - “Na Loja Exemplo, qual é o preço do SKU CAM-AZ-M e quanto há em cada centro de distribuição?”
+- “Na Loja Exemplo, por que o pedido 12345 do marketplace falhou na sincronização?”
 - “Ajuste o cabeçalho e o rodapé do tema da Loja Exemplo e mostre o preview.”
 
 Substitua “Loja Exemplo” pelo nome de uma das suas contas. A skill
@@ -43,6 +44,10 @@ histórico, pagamentos, entregas e resumos de vendas em modo somente leitura.
 
 A skill [`mcp-products`](skills/mcp-products/SKILL.md) gerencia o cadastro de
 produtos e variações, os preços e promoções por SKU e o saldo de estoque de cada centro.
+
+A skill [moovin-hub](skills/moovin-hub/SKILL.md) gerencia canais e anúncios de
+marketplace, vincula ofertas ao catálogo e investiga falhas de sincronização
+de anúncios, preços, estoques e pedidos.
 
 Para temas, layouts, seções, banners, vitrines, menus, cores e fontes, a skill
 [`moovin-storefront`](skills/moovin-storefront/SKILL.md) orienta a personalização da
